@@ -17,7 +17,7 @@ To participate in KathCode, please register through the Google Form linked in th
 
 ## Registration
 
-To register for KathCode, please fill out the [registration form](https://www.kathcode.kathford.edu.np/register) and submit the registration fee of NRs 5000 (After selection).
+To register for KathCode, please fill out the [registration form](https://www.kathcode.kathford.edu.np/register) and submit the registration fee of NRs 4000 (After selection).
 
 ## Rules
 
