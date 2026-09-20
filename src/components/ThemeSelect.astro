@@ -114,8 +114,6 @@ const { labels } = Astro.props;
 
 	const storageKey = "starlight-theme";
 
-	const parseTheme = (theme: unknown): Theme => (theme === "light" ? "light" : "dark");
-
 	const loadTheme = (): Theme => {
 		const stored = typeof localStorage !== "undefined" && localStorage.getItem(storageKey);
 		if (stored === "light" || stored === "dark") return stored;
