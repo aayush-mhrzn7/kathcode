@@ -1,0 +1,17 @@
+[
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Judge One",
+    "title": "Industry Expert"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Judge Two",
+    "title": "Product Lead"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Judge Three",
+    "title": "Engineering Manager"
+  }
+]

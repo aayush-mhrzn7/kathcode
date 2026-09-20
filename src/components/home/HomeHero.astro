@@ -1,0 +1,239 @@
+---
+import { Image } from "astro:assets";
+import houston from "../../assets/houston.webp";
+
+const stats = [
+	{ value: "72", label: "Hours" },
+	{ value: "3", label: "Tracks" },
+	{ value: "80k", label: "Prize pool" },
+];
+---
+
+<section class="home-hero" aria-labelledby="_top">
+	<div class="copy" data-reveal>
+		<p class="eyebrow">Kathford IT Club · 1–4 Ashoj 2082</p>
+		<h1 id="_top" data-page-title class="title">
+			<span class="brand-kath">Kath</span><span class="brand-code">Code</span>
+		</h1>
+		<p class="tagline">
+			Code for invention. A 72-hour hackathon at Kathford to design, build, and pitch solutions
+			for the real world.
+		</p>
+		<div class="actions">
+			<a class="primary" href="/registration/register/">Register Now</a>
+			<a class="ghost" href="#about">Learn more</a>
+		</div>
+		<ul class="stats">
+			{
+				stats.map((stat) => (
+					<li>
+						<strong>{stat.value}</strong>
+						<span>{stat.label}</span>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+	<div class="visual" data-reveal style="--reveal-delay: 140ms">
+		<div class="glow" aria-hidden="true"></div>
+		<Image src={houston} alt="KathCode mascot" width={560} height={560} loading="eager" />
+	</div>
+</section>
+
+<style>
+	.home-hero {
+		display: grid;
+		align-items: center;
+		gap: 2.5rem;
+		padding: 2.5rem 0 1rem;
+	}
+
+	.copy {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1.15rem;
+	}
+
+	.eyebrow {
+		margin: 0;
+		font-size: 0.8rem;
+		letter-spacing: 0.14em;
+		text-transform: uppercase;
+		color: var(--cyan);
+	}
+
+	.title {
+		margin: 0;
+		font-size: clamp(3.4rem, 9vw, 6.4rem);
+		font-weight: 700;
+		line-height: 0.92;
+		letter-spacing: -0.05em;
+	}
+
+	.tagline {
+		margin: 0;
+		max-width: 36ch;
+		font-size: clamp(1.05rem, 2vw, 1.25rem);
+		line-height: 1.6;
+		color: var(--sl-color-text);
+	}
+
+	.actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75rem;
+		margin-top: 0.35rem;
+	}
+
+	.primary,
+	.ghost {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 0.7rem 1.2rem;
+		border-radius: 999px;
+		font-weight: 600;
+		text-decoration: none;
+		transition:
+			background 160ms ease,
+			color 160ms ease,
+			border-color 160ms ease,
+			transform 160ms ease,
+			box-shadow 160ms ease;
+	}
+
+	.primary {
+		background: var(--cyan);
+		color: #111;
+	}
+
+	.primary:hover {
+		color: #fff;
+		transform: translateY(-2px);
+		box-shadow: 0 10px 22px color-mix(in srgb, var(--cyan) 32%, transparent);
+	}
+
+	:global(.sl-markdown-content) .primary {
+		background: var(--cyan);
+		color: #111;
+	}
+
+	:global(.sl-markdown-content) .primary:hover,
+	:global(:root[data-theme="dark"] .sl-markdown-content) .primary:hover,
+	:global(:root[data-theme="light"] .sl-markdown-content) .primary:hover {
+		background: var(--accent-high);
+		color: #fff;
+	}
+
+	.ghost {
+		border: 1px solid var(--border);
+		color: var(--fg);
+		background: transparent;
+	}
+
+	:global(.sl-markdown-content) .ghost,
+	:global(.sl-markdown-content) .ghost:hover {
+		color: var(--fg);
+	}
+
+	:global(.sl-markdown-content) .ghost:hover {
+		border-color: var(--cyan);
+		color: var(--cyan);
+		transform: translateY(-2px);
+	}
+
+	.stats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1.5rem 2rem;
+		margin: 0.75rem 0 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	.stats strong {
+		display: block;
+		font-size: 1.35rem;
+		color: var(--fg);
+	}
+
+	.stats span {
+		font-size: 0.8rem;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+		color: var(--text-color);
+	}
+
+	.visual {
+		position: relative;
+		display: grid;
+		place-items: center;
+		min-height: 16rem;
+	}
+
+	.glow {
+		position: absolute;
+		inset: 12%;
+		border-radius: 50%;
+		background: radial-gradient(circle, color-mix(in srgb, var(--cyan) 28%, transparent) 0%, transparent 70%);
+		filter: blur(18px);
+		pointer-events: none;
+		animation: glow-pulse 5.5s ease-in-out infinite;
+	}
+
+	.visual :global(img) {
+		position: relative;
+		z-index: 1;
+		width: min(100%, 26rem);
+		height: auto;
+		animation: float 6s ease-in-out infinite;
+	}
+
+	@keyframes float {
+		0%,
+		100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(-10px);
+		}
+	}
+
+	@keyframes glow-pulse {
+		0%,
+		100% {
+			opacity: 0.7;
+			transform: scale(1);
+		}
+		50% {
+			opacity: 1;
+			transform: scale(1.06);
+		}
+	}
+
+	@media (min-width: 50rem) {
+		.home-hero {
+			grid-template-columns: 1.05fr 0.95fr;
+			gap: 3rem;
+			min-height: calc(100svh - var(--sl-nav-height) - 3rem);
+			padding: 1rem 0 2rem;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.primary,
+		.ghost,
+		.glow,
+		.visual :global(img) {
+			animation: none;
+			transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+		}
+
+		.primary:hover,
+		:global(.sl-markdown-content) .ghost:hover {
+			transform: none;
+			box-shadow: none;
+		}
+	}
+</style>

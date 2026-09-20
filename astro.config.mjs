@@ -17,6 +17,8 @@ export default defineConfig({
       components: {
         Header: "./src/components/Header.astro",
         ThemeSelect: "./src/components/ThemeSelect.astro",
+        PageFrame: "./src/components/PageFrame.astro",
+        PageTitle: "./src/components/PageTitle.astro",
       },
       customCss: [
         "@fontsource-variable/instrument-sans",

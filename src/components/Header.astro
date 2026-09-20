@@ -3,6 +3,9 @@ import SiteTitle from "virtual:starlight/components/SiteTitle";
 import SocialIcons from "virtual:starlight/components/SocialIcons";
 import ThemeSelect from "virtual:starlight/components/ThemeSelect";
 import type { Props } from "@astrojs/starlight/props";
+import SidebarToggle from "./SidebarToggle.astro";
+
+const { hasSidebar } = Astro.props;
 ---
 
 <div class="header sl-flex">
@@ -10,6 +13,7 @@ import type { Props } from "@astrojs/starlight/props";
 		<SiteTitle {...Astro.props} />
 	</div>
 	<div class="actions sl-flex">
+		{hasSidebar && <SidebarToggle variant="header" />}
 		<div class="social sl-flex">
 			<SocialIcons {...Astro.props} />
 		</div>

@@ -1,0 +1,47 @@
+[
+  {
+    "category": "Title Sponsor",
+    "companies": [
+      { "company_image": "https://placehold.co/600x400", "company_name": "Title Partner 1" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Title Partner 2" }
+    ]
+  },
+  {
+    "category": "Platinum Sponsor",
+    "companies": [
+      { "company_image": "https://placehold.co/600x400", "company_name": "Platinum Partner 1" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Platinum Partner 2" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Platinum Partner 3" }
+    ]
+  },
+  {
+    "category": "Gold Sponsor",
+    "companies": [
+      { "company_image": "https://placehold.co/600x400", "company_name": "Gold Partner 1" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Gold Partner 2" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Gold Partner 3" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Gold Partner 4" }
+    ]
+  },
+  {
+    "category": "Track Sponsor",
+    "companies": [
+      { "company_image": "https://placehold.co/600x400", "company_name": "Track Partner 1" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Track Partner 2" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Track Partner 3" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Track Partner 4" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Track Partner 5" }
+    ]
+  },
+  {
+    "category": "Silver Sponsor",
+    "companies": [
+      { "company_image": "https://placehold.co/600x400", "company_name": "Silver Partner 1" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Silver Partner 2" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Silver Partner 3" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Silver Partner 4" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Silver Partner 5" },
+      { "company_image": "https://placehold.co/600x400", "company_name": "Silver Partner 6" }
+    ]
+  }
+]
