@@ -1,0 +1,36 @@
+:root {
+  --sl-font: "Instrument Sans Variable", sans-serif;
+  --sl-nav-height: 3.75rem;
+  --sl-nav-pad-x: 1.25rem;
+  --sl-nav-pad-y: 0.5rem;
+  --sl-color-bg-nav: var(--bg);
+  --sl-color-hairline-shade: var(--gray-4);
+}
+
+:root[data-theme="light"] {
+  --sl-color-bg-nav: var(--bg);
+  --sl-color-hairline-shade: var(--border);
+}
+
+.brand-kath {
+  color: var(--navy-deep);
+}
+
+.brand-code {
+  color: var(--cyan);
+}
+
+.sl-markdown-content a,
+.hero a:not(.action) {
+  color: var(--cyan);
+}
+
+.sl-markdown-content a:hover,
+.hero a:not(.action):hover {
+  color: var(--navy);
+}
+
+:root[data-theme="dark"] .sl-markdown-content a:hover,
+:root[data-theme="dark"] .hero a:not(.action):hover {
+  color: var(--accent-high);
+}

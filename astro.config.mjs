@@ -8,6 +8,22 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "KathCode",
+      logo: {
+        dark: "./src/assets/logo-dark.png",
+        light: "./src/assets/logo-light.png",
+        alt: "KathCode",
+        replacesTitle: true,
+      },
+      components: {
+        Header: "./src/components/Header.astro",
+        ThemeSelect: "./src/components/ThemeSelect.astro",
+      },
+      customCss: [
+        "@fontsource-variable/instrument-sans",
+        "@fontsource-variable/instrument-sans/wght-italic.css",
+        "./src/styles/base.css",
+        "./src/styles/custom.css",
+      ],
       social: {
         github: "https://github.com/Kathford-IT-Club-KIC",
       },
