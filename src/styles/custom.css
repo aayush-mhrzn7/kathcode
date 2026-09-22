@@ -1,7 +1,7 @@
 :root {
   --sl-font: "Instrument Sans Variable", sans-serif;
   --sl-nav-height: 3.75rem;
-  --sl-nav-pad-x: 1.25rem;
+  --sl-nav-pad-x: var(--sl-content-pad-x);
   --sl-nav-pad-y: 0.5rem;
   --sl-color-bg-nav: var(--bg);
   --sl-color-hairline-shade: var(--gray-4);

@@ -1,6 +1,6 @@
 # KathCode Hackathon
 
-Welcome to KathCode, a 72-hour hackathon focused on innovation and sustainability!
+Welcome to KathCode, a 36-hour hackathon focused on innovation and sustainability!
 
 ## About
 
@@ -8,7 +8,7 @@ KathCode is organized by Kathford IT Club, aiming to bring together students, de
 
 ## Event Details
 
-- **Date:** 1st to 4th of Asar, 2082
+- **Date:** 10th to 11th of Ashoj, 2083
 - **Location:** Kathford IT block
 
 ## How to Participate

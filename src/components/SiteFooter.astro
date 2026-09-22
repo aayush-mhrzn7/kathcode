@@ -1,4 +1,8 @@
 ---
+import { Image } from "astro:assets";
+import logoDark from "../assets/logo-dark.png";
+import logoLight from "../assets/logo-light.png";
+
 const year = new Date().getFullYear();
 
 const company = [
@@ -20,9 +24,24 @@ const resources = [
 <footer class="site-footer">
 	<div class="inner">
 		<div class="brand">
-			<p class="logo"><span class="brand-kath">Kath</span><span class="brand-code">code</span></p>
+			<a href="/" class="logo" aria-label="KathCode">
+				<Image
+					class="light:sl-hidden"
+					src={logoDark}
+					alt=""
+					width={928}
+					height={278}
+				/>
+				<Image
+					class="dark:sl-hidden"
+					src={logoLight}
+					alt=""
+					width={928}
+					height={278}
+				/>
+			</a>
 			<p class="blurb">
-				A 72-hour hackathon at Kathford College of Engineering and Management. We bring students,
+				A 36-hour hackathon at Kathford College of Engineering and Management. We bring students,
 				developers, and designers together to build solutions for real-world problems.
 			</p>
 			<p class="contact">
@@ -124,10 +143,20 @@ const resources = [
 	}
 
 	.logo {
+		display: inline-block;
 		margin: 0 0 1rem;
-		font-size: 1.7rem;
-		font-weight: 700;
-		letter-spacing: -0.03em;
+		line-height: 0;
+		text-decoration: none;
+	}
+
+	.logo :global(img) {
+		display: block;
+		height: 2.75rem;
+		width: auto;
+		max-width: min(100%, 14rem);
+		object-fit: contain;
+		object-position: left center;
+		image-rendering: pixelated;
 	}
 
 	.blurb,
