@@ -2,35 +2,8 @@
 title: "KathCode"
 description: Code for Sustainability
 template: splash
-hero:
-  tagline: Code for Sustainability
-  image:
-    file: ../../assets/houston.webp
-  actions:
-    - text: Learn More
-      link: /introduction
-      icon: right-arrow
-      variant: primary
 ---
 
-import { Card, CardGrid } from "@astrojs/starlight/components";
+import HomeSections from "../../components/home/HomeSections.astro";
 
-## Next steps
-
-<CardGrid stagger>
-  <Card title="Event Timeline" icon="calendar" link>
-    View the timeline of events for Kathcode.
-  </Card>
-  <Card title="Rulebook" icon="book">
-    Learn about the rules and guidelines for participating in Kathcode.
-  </Card>
-  <Card title="Sponsorship Opportunities" icon="handshake">
-    Explore sponsorship packages and benefits for Kathcode.
-  </Card>
-  <Card title="Prizes" icon="gift">
-    Discover the prizes and awards for the top-performing teams in Kathcode.
-  </Card>
-  <Card title="Register Now" icon="user-plus">
-    Sign up to participate in Kathcode and showcase your innovation.
-  </Card>
-</CardGrid>
+<HomeSections />

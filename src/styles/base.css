@@ -1,0 +1,142 @@
+/* Brand colors sampled from the KathCode poster */
+:root {
+  --white: #f8f8f8;
+  --navy: #2c3090;
+  --navy-deep: #102088;
+  --navy-ink: #0c1014;
+  --cyan: #2cb4e0;
+  --royal: #004098;
+}
+
+/* Dark — black surfaces; blues only on links and brand text */
+:root,
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --gray-1: #111111;
+  --gray-2: #191919;
+  --gray-3: #222222;
+  --gray-4: #2a2a2a;
+  --gray-5: #313131;
+  --gray-6: #3a3a3a;
+  --gray-7: #484848;
+  --gray-8: #606060;
+  --gray-9: #6e6e6e;
+  --gray-10: #7b7b7b;
+  --gray-11: #b4b4b4;
+  --gray-12: #eeeeee;
+
+  --gray-a1: #ffffff03;
+  --gray-a2: #ffffff06;
+  --gray-a3: #ffffff0f;
+  --gray-a4: #ffffff17;
+  --gray-a5: #ffffff1f;
+  --gray-a6: #ffffff26;
+  --gray-a7: #ffffff31;
+  --gray-a8: #ffffff44;
+  --gray-a9: #ffffff72;
+  --gray-a10: #ffffff7c;
+  --gray-a11: #ffffff9b;
+  --gray-a12: #ffffffdf;
+
+  --bg: #111111;
+  --fg: var(--gray-12);
+  --text-color: var(--gray-11);
+  --border: var(--gray-4);
+  --selection: #2cb4e033;
+  --accent: var(--cyan);
+  --accent-high: #6ad0ec;
+  --accent-low: var(--navy-deep);
+
+  --sl-color-white: var(--fg);
+  --sl-color-gray-1: var(--gray-12);
+  --sl-color-gray-2: var(--gray-11);
+  --sl-color-gray-3: var(--gray-9);
+  --sl-color-gray-4: var(--gray-7);
+  --sl-color-gray-5: var(--gray-5);
+  --sl-color-gray-6: var(--gray-3);
+  --sl-color-black: var(--bg);
+  --sl-color-accent-low: var(--accent-low);
+  --sl-color-accent: var(--accent);
+  --sl-color-accent-high: var(--accent-high);
+  --sl-color-text: var(--text-color);
+  --sl-color-text-accent: var(--cyan);
+  --sl-color-text-invert: var(--bg);
+  --sl-color-bg: var(--bg);
+  --sl-color-bg-nav: var(--bg);
+  --sl-color-bg-sidebar: var(--bg);
+  --sl-color-bg-inline-code: var(--gray-5);
+  --sl-color-bg-accent: var(--accent);
+  --sl-color-hairline-light: var(--gray-5);
+  --sl-color-hairline: var(--gray-4);
+  --sl-color-hairline-shade: var(--gray-3);
+}
+
+/* Light — poster white, navy type, cyan accent */
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  --gray-1: #f8f8f8;
+  --gray-2: #f4f5f8;
+  --gray-3: #eceef4;
+  --gray-4: #e0e3ee;
+  --gray-5: #d0d4e4;
+  --gray-6: #b8bdd4;
+  --gray-7: #8b91b4;
+  --gray-8: #6a70a0;
+  --gray-9: #4a5088;
+  --gray-10: #363c7c;
+  --gray-11: #2c3090;
+  --gray-12: #102088;
+
+  --gray-a1: #2c309008;
+  --gray-a2: #2c30900f;
+  --gray-a3: #2c30901a;
+  --gray-a4: #2c309026;
+  --gray-a5: #2c309033;
+  --gray-a6: #2c309042;
+  --gray-a7: #2c309054;
+  --gray-a8: #2c30906b;
+  --gray-a9: #2c30908f;
+  --gray-a10: #2c309099;
+  --gray-a11: #2c3090bf;
+  --gray-a12: #2c3090eb;
+
+  --bg: var(--white);
+  --fg: var(--navy);
+  --text-color: var(--navy);
+  --border: var(--gray-4);
+  --selection: #2cb4e033;
+  --accent: var(--cyan);
+  --accent-high: var(--navy);
+  --accent-low: #d8f3fb;
+
+  --sl-color-white: var(--fg);
+  --sl-color-gray-1: var(--gray-12);
+  --sl-color-gray-2: var(--gray-11);
+  --sl-color-gray-3: var(--gray-10);
+  --sl-color-gray-4: var(--gray-8);
+  --sl-color-gray-5: var(--gray-6);
+  --sl-color-gray-6: var(--gray-3);
+  --sl-color-gray-7: var(--gray-2);
+  --sl-color-black: var(--bg);
+  --sl-color-accent-low: var(--accent-low);
+  --sl-color-accent: var(--accent);
+  --sl-color-accent-high: var(--accent-high);
+  --sl-color-text: var(--text-color);
+  --sl-color-text-accent: var(--cyan);
+  --sl-color-text-invert: var(--white);
+  --sl-color-bg: var(--bg);
+  --sl-color-bg-nav: var(--bg);
+  --sl-color-bg-sidebar: var(--gray-2);
+  --sl-color-bg-inline-code: var(--gray-3);
+  --sl-color-bg-accent: var(--accent);
+  --sl-color-hairline-light: var(--border);
+  --sl-color-hairline: var(--border);
+  --sl-color-hairline-shade: var(--border);
+}
+
+::selection {
+  background-color: var(--selection);
+  color: var(--fg);
+}

@@ -1,0 +1,62 @@
+---
+import HomeHero from "./HomeHero.astro";
+import About from "./About.astro";
+import PrizeBento from "./PrizeBento.astro";
+import PeopleGrid from "./PeopleGrid.astro";
+import SponsorGrid from "./SponsorGrid.astro";
+import judges from "../../data/judges.json";
+import mentors from "../../data/mentors.json";
+import sponsors from "../../data/sponsors.json";
+---
+
+<div class="home-sections">
+	<HomeHero />
+	<About />
+	<PrizeBento />
+	<PeopleGrid
+		id="judges"
+		eyebrow="Judges"
+		heading="Meet the judges"
+		description="Four judges score the grand pitch presentation on 11th Ashoj, 2083. They look for a real problem, a working prototype, and a team that can explain the work under pressure."
+		people={judges}
+	/>
+	<PeopleGrid
+		id="mentors"
+		eyebrow="Mentors"
+		heading="Meet the mentors"
+		description="Six mentors sit with teams across the 36 hours — product, design, AI, and pitching. They unstick the hard parts so you can ship something you can stand behind on stage."
+		people={mentors}
+	/>
+	<SponsorGrid groups={sponsors} />
+</div>
+
+<script>
+	const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+	const nodes = document.querySelectorAll("[data-reveal]");
+
+	if (reduceMotion) {
+		nodes.forEach((node) => node.classList.add("is-in"));
+	} else {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				for (const entry of entries) {
+					if (!entry.isIntersecting) continue;
+					entry.target.classList.add("is-in");
+					observer.unobserve(entry.target);
+				}
+			},
+			{ threshold: 0.01, rootMargin: "0px 0px -6% 0px" },
+		);
+
+		nodes.forEach((node) => observer.observe(node));
+	}
+</script>
+
+<style>
+	.home-sections {
+		display: flex;
+		flex-direction: column;
+		gap: 4.5rem;
+		padding: 0 0 4.5rem;
+	}
+</style>

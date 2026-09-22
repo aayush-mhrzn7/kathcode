@@ -1,0 +1,32 @@
+[
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Mentor One",
+    "title": "Full-stack Mentor"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Mentor Two",
+    "title": "Design Mentor"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Mentor Three",
+    "title": "AI / ML Mentor"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Mentor Four",
+    "title": "Startup Mentor"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Mentor Five",
+    "title": "Product Mentor"
+  },
+  {
+    "image": "https://placehold.co/600x400",
+    "name": "Mentor Six",
+    "title": "Pitch Mentor"
+  }
+]
