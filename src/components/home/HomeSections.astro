@@ -2,17 +2,18 @@
 import HomeHero from "./HomeHero.astro";
 import About from "./About.astro";
 import PrizeBento from "./PrizeBento.astro";
-import PeopleGrid from "./PeopleGrid.astro";
-import SponsorGrid from "./SponsorGrid.astro";
-import judges from "../../data/judges.json";
-import mentors from "../../data/mentors.json";
-import sponsors from "../../data/sponsors.json";
+// import PeopleGrid from "./PeopleGrid.astro";
+// import SponsorGrid from "./SponsorGrid.astro";
+// import judges from "../../data/judges.json";
+// import mentors from "../../data/mentors.json";
+// import sponsors from "../../data/sponsors.json";
 ---
 
 <div class="home-sections">
 	<HomeHero />
 	<About />
 	<PrizeBento />
+	{/* Judges, mentors & sponsors use placeholder data — re-enable when real data is ready
 	<PeopleGrid
 		id="judges"
 		eyebrow="Judges"
@@ -28,6 +29,7 @@ import sponsors from "../../data/sponsors.json";
 		people={mentors}
 	/>
 	<SponsorGrid groups={sponsors} />
+	*/}
 </div>
 
 <script>
