@@ -8,7 +8,7 @@ KathCode is organized by Kathford IT Club, aiming to bring together students, de
 
 ## Event Details
 
-- **Date:** 10th to 11th of Ashoj, 2083
+- **Date:** 17th to 18th of Ashoj, 2083
 - **Location:** Kathford IT block
 
 ## How to Participate
